@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Голубой фон -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#407CE2"/> <!-- Голубой цвет -->
+            <corners android:radius="30dp"/> <!-- Закругленные углы -->
+
+        </shape>
+    </item>
+
+    <!-- Стрелка по центру -->
+    <item android:drawable="@drawable/arrow"
+        android:width="32dp"
+        android:height="32dp"
+        android:gravity="center"/>
+</layer-list>

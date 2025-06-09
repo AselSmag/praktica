@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/btnSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:text="Пропустить"
+        android:textSize="17dp"
+        android:layout_marginTop="45dp"
+        android:background="@android:color/transparent"
+        android:textColor="#A1A8B0"/>
+    <ImageButton
+        android:id="@+id/btnNext"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/butto_arrow"
+        android:scaleType="centerInside"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="55dp"/>
+</RelativeLayout>
