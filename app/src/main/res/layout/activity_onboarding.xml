@@ -7,7 +7,8 @@
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dp"/>
 
     <Button
         android:id="@+id/btnSkip"
@@ -17,7 +18,7 @@
         android:layout_alignParentEnd="true"
         android:text="Пропустить"
         android:textSize="17dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="20dp"
         android:background="@android:color/transparent"
         android:textColor="#A1A8B0"/>
     <ImageButton

@@ -8,23 +8,33 @@
 
     <ImageView
         android:id="@+id/imageOnboarding"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginBottom="32dp"/>
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_marginBottom="38dp"
+        android:src="@drawable/onboarding1"/>
 
     <TextView
         android:id="@+id/textTitle"
+        android:text="Множество специалистов в одном месте"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_marginBottom="16dp"/>
 
-    <TextView
+        android:textColor="#221F1F"/>
+
+    <ImageView
+        android:id="@+id/textDescription"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/onboarding1"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="left"/>
+    <!--<TextView
         android:id="@+id/textDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="16sp"
-        android:textAlignment="center"/>
+        android:textAlignment="center"/>-->
 
 </LinearLayout>

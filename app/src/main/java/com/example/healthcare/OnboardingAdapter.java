@@ -11,8 +11,8 @@ import androidx.viewpager.widget.PagerAdapter;
 public class OnboardingAdapter extends PagerAdapter {
     private Context context;
     private int[] images = {R.drawable.onboarding1, R.drawable.onboarding2};
-    private String[] titles = {"Множество специалистов в одном месте", "Запись к врачу в пару кликов"};
-    private String[] descriptions = {"Опboarding-1", "Опboarding-2"};
+    private String[] titles = {"Множество специалистов в одном месте", "Запись к врачу в пару кликов\n"};
+    private int[] descriptions = {R.drawable.page1, R.drawable.page2};
 
     public OnboardingAdapter(Context context) {
         this.context = context;
@@ -35,11 +35,11 @@ public class OnboardingAdapter extends PagerAdapter {
 
         ImageView image = view.findViewById(R.id.imageOnboarding);
         TextView title = view.findViewById(R.id.textTitle);
-        TextView description = view.findViewById(R.id.textDescription);
+        ImageView image2  = view.findViewById(R.id.textDescription);
 
         image.setImageResource(images[position]);
         title.setText(titles[position]);
-        description.setText(descriptions[position]);
+        image2.setImageResource(descriptions[position]);
 
         container.addView(view);
         return view;

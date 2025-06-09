@@ -2,7 +2,7 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 <item android:drawable="@drawable/splashback"/>
     <item>
-        <bitmap android:src="@drawable/icon"
+        <bitmap android:src="@drawable/iconhealth"
             android:gravity="center"/>
     </item>
 </layer-list>
