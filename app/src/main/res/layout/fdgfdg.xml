@@ -47,9 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingStart="24dp"
-        android:paddingEnd="24dp"
-        android:paddingTop="16dp"
+        android:padding="24dp"
         android:layout_below="@id/headerBackground">
 
         <!-- Поле Email с иконкой -->
@@ -59,22 +57,13 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            app:startIconDrawable="@drawable/imgemail"
-            app:startIconTint="@color/blue"
-            app:boxBackgroundMode="outline"
-            app:boxStrokeWidth="1dp"
-            app:boxStrokeWidthFocused="1dp"
-            app:boxStrokeColor="@color/blue"
-            app:hintTextColor="@color/blue">
-
+            app:startIconDrawable="@drawable/imgemail">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/emailEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="email"
-                android:inputType="textEmailAddress"
-                android:paddingStart="50dp"
-                android:textColorHint="@color/blue"/>
+                android:inputType="textEmailAddress" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Поле Пароль с иконкой и переключателем видимости -->
@@ -85,24 +74,17 @@
             android:layout_marginBottom="8dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:startIconDrawable="@drawable/imgpassw"
-            app:startIconTint="@color/blue"
             app:endIconMode="password_toggle"
             app:endIconDrawable="@drawable/eyes1"
-            app:endIconTint="@color/blue"
-            app:boxBackgroundMode="outline"
-            app:boxStrokeWidth="1dp"
-            app:boxStrokeWidthFocused="1dp"
-            app:boxStrokeColor="@color/blue"
-            app:hintTextColor="@color/blue">
+            app:endIconTint="@color/blue">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/passwordEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="пароль"
-                android:inputType="textPassword"
-                android:paddingStart="50dp"
-                android:textColorHint="@color/blue"/>
+                android:paddingStart="12dp"
+                android:inputType="textPassword"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Ссылка "Забыли пароль?" -->
