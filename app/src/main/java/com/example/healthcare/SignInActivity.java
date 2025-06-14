@@ -67,8 +67,8 @@ public class SignInActivity extends AppCompatActivity {
 
         // Обработчик текста "Забыли пароль?"
         forgotPasswordTextView.setOnClickListener(v -> {
-            Toast.makeText(SignInActivity.this, "Функция восстановления пароля", Toast.LENGTH_SHORT).show();
-            // Здесь можно добавить переход на экран восстановления пароля
+            Intent intent = new Intent(SignInActivity.this, PasswordRecovery1.class);
+            startActivity(intent);
         });
     }
 
