@@ -111,7 +111,7 @@ public class PinActivity extends AppCompatActivity {
     private void checkPin() {
         if (enteredPin.toString().equals(CORRECT_PIN)) {
             // Пин-код верный, переход на главный экран
-            Intent intent = new Intent(PinActivity.this, HomeActivity.class);
+            Intent intent = new Intent(PinActivity.this, MainActivity.class);
             startActivity(intent);
             finish();
         } else {

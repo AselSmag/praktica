@@ -105,7 +105,7 @@ public class RepeatPin extends AppCompatActivity {
     private void checkPin() {
         if (enteredPin.toString().equals(correctPin)) {
             // PIN совпадает, переходим на следующий экран
-            Intent intent = new Intent(RepeatPin.this, HomeActivity.class);
+            Intent intent = new Intent(RepeatPin.this, MainActivity.class);
             startActivity(intent);
             finish();
         } else {

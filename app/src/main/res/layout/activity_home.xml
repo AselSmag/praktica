@@ -52,7 +52,6 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/bottom_navigation"
         android:layout_below="@id/topBar"
         android:background="@drawable/whitehome"
         android:padding="16dp">
@@ -151,18 +150,4 @@
         </LinearLayout>
     </ScrollView>
 
-    <!-- Нижняя панель навигации -->
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
-        style="@style/BottomNavNoRipple"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:padding="10dp"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/backmenu"
-        app:menu="@menu/bottom_nav_menu"
-        app:itemIconTint="@drawable/bottom_nav_colors"
-        app:itemTextColor="@drawable/bottom_nav_colors"
-        app:labelVisibilityMode="labeled"
-        app:elevation="8dp"/>
 </RelativeLayout>
