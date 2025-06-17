@@ -3,32 +3,83 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@android:color/white"
-    android:gravity="center">
+>
 
-    <!-- Логотип приложения -->
-    <ImageView
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        android:src="@drawable/iconhealth" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="top">
 
+        <!-- Голубой прямоугольник за заголовком -->
+        <View
+            android:id="@+id/headerBackground"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/lightblue"
+            android:layout_alignParentTop="true"/>
+
+        <!-- Заголовок "Вход" с кнопкой назад -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_alignTop="@id/headerBackground"
+            android:layout_alignBottom="@id/headerBackground">
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/chevronleft"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                app:tint="@color/darktext" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ПИН-код"
+                android:textSize="24sp"
+                android:textColor="@color/darktext"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <!-- Подзаголовок -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Введите ПИН-код для входа"
         android:textSize="25dp"
         android:textStyle="bold"
+        android:layout_marginTop="80dp"
         android:textColor="@color/darktext"
-        android:layout_marginBottom="10dp"/>
+
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:text="Вам потребуется вводить этот ПИН-код для входа в приложение"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/greytext"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"/>
 
     <!-- Поля для ввода PIN -->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_gravity="center"
         android:layout_marginBottom="3dp">
 
         <EditText
@@ -92,16 +143,18 @@
     <TextView
         android:id="@+id/errorText"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="17dp"
+        android:layout_gravity="center"
         android:textColor="@android:color/holo_red_dark"
-        android:visibility="visible"/>
+        android:visibility="visible" />
 
     <!-- Клавиатура -->
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:columnCount="3"
-        android:rowCount="4">
+        android:rowCount="4"
+        android:layout_gravity="center">
 
         <!-- Строка 1 -->
         <Button
@@ -228,16 +281,4 @@
             android:layout_gravity="center"
             />
     </GridLayout>
-    <Button
-        android:id="@+id/btnExit"
-        android:layout_width="170dp"
-        android:layout_height="50dp"
-        android:text="Выход"
-        android:textColor="@color/blue"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:drawableEnd="@drawable/exit"
-        android:background="@drawable/button_border1"
-        android:layout_margin="4dp"
-        android:layout_gravity="right"/>
 </LinearLayout>
