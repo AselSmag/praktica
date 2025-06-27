@@ -19,10 +19,35 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <Button
-                android:id="@+id/profileButton"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentLeft="true">
+                <ImageView
+                    android:id="@+id/profileImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/profileicon"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/profileName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Асель"
+                    android:textColor="@color/darktext"
+                    android:textSize="18dp"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+<!--            <Button
+                android:id="@+id/profileImg"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
                 android:layout_alignParentLeft="true"
                 android:layout_marginLeft="-20dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
@@ -37,7 +62,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_centerInParent="true"
                 android:src="@drawable/smsicon"
-                android:background="?attr/selectableItemBackgroundBorderless"/>
+                android:background="?attr/selectableItemBackgroundBorderless"/>-->
         </RelativeLayout>
 
         <ImageView
